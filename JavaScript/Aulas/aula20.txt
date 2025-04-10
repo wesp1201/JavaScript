@@ -1,0 +1,9 @@
+funçoes
+é um bloco de código reutilizável
+*** uma funçao pode ser executada do documento html
+
+//execuçao interna
+html <script></script>
+//link para um documento( recomendado)
+html -------- js
+

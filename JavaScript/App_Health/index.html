@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Health</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="main">
+    <h1>App Health</h1>
+        <form name="frmIMC">
+            <input type="number" name="txtIdade" id="" placeholder="Idade" class="caixa">
+            <input type="number" name="txtPeso" id="" placeholder="Peso" class="caixa">
+            <input type="number" name="txtAltura" id="" placeholder="Altura" class="caixa">
+            <p>
+                Sexo:
+                <input type="radio" name="grupo" id="m">Masculino
+                <input type="radio" name="grupo" id="f">Feminino
+            </p>
+            <p>
+                <select name="nivel" id="atividade">
+                    <option value="" selected>Selecione o nivel de atividade fisica</option>
+                    <option value="1.2">Sedentario (Trabalho de escritório)</option>
+                    <option value="1.375">Exercicio leve (1-2 dias semanais)</option>
+                    <option value="1.55">Exercicio moderado (3-5 dias semanais)</option>
+                    <option value="1.725">Exercicio Pesado (6-7 dias por semana)</option>
+                    <option value="1.9">Atleta (2x dia)</option>
+                    
+                </select>
+            </p>
+        <p>
+            <input type="button" value="Calcular" onclick="calcular()">
+            <input type="reset" value="Limpar" onclick="limpar()">
+        </p>
+        </form>
+    
+    <img src="icons/reset.png" alt="Marcador IMC" id="grafico">
+    <h3 id="imc"></h3>
+    <h4 id="status"></h4>
+
+    <img src="icons/heart.png" alt="Coraçao">
+    <h3 id="freq"></h3>
+    <h3>Calorias por Dia:</h3>
+    <h4 id="calorias"></h4>
+    
+
+</div>
+    <script src="health.js"></script>
+</body>
+</html>
